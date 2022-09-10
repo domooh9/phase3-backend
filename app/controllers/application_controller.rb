@@ -5,15 +5,16 @@ class ApplicationController < Sinatra::Base
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
-  post '/users' do
-    user = User.create(
-      name: params[:name],
-      avatar_id: params[:avatar_id],
-      level_id: params[:level_id]
+  post '/steps' do
+    steps = steps.create(
+      steps_id: params[:steps_id]
     )
     user.to_json
   end
-  get '/users' do
+  get '/steps' do
     steps.all.to_json
+  end
+  get '/id' do
+    id.all.to_json
   end
 end
