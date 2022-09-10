@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-
-
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
@@ -45,7 +43,6 @@ group :development do
   gem "rerun"
 end
 
-gem 'activerecord-reset-pk-sequence'
 # These gems will only be used when we are running tests
 group :test do
   gem "database_cleaner", "~> 2.0"
