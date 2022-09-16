@@ -16,5 +16,6 @@ class ApplicationController < Sinatra::Base
   end
   get '/id' do
     id.all.to_json
+    
   end
 end
